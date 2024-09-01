@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:paddingLeft="@dimen/_11sdp"
+    android:paddingRight="@dimen/_11sdp"
+    android:gravity="center_vertical"
+    android:layout_centerVertical="true"
+
+    android:layout_height="@dimen/_50sdp">
+
+    <TextView
+        android:id="@+id/tv_Date"
+        android:layout_weight="82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sat, Nov 2021"
+        android:textSize="@dimen/_22ssp"></TextView>
+
+    <ImageView
+        android:id="@+id/iconWeather"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_weight="8"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@id/tv_Temp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:src="@drawable/sunn">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/tv_Temp"
+        android:layout_weight="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="20.98 °C"
+        android:gravity="center"
+        android:textSize="@dimen/_22ssp">
+    </TextView>
+
+
+</LinearLayout>
